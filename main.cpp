@@ -4,7 +4,10 @@
 
 // namespace use
 // for easy use of importations and avoid names conflicts
-using namespace std;
+// best use of standard namespace 
+using std::cout;
+using std::endl;
+using std::string;
 
 // defining namespaces
 namespace namespace1 {
