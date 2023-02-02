@@ -23,6 +23,23 @@ namespace namespace2 {
     int age = 10;
 }
 
+void printNumber(int* numberPtr){
+    cout << *numberPtr  << endl;
+}
+
+void printChar(char* charPtr){
+    cout << *charPtr  << endl;
+}
+
+void printAny(void* ptr, char type){
+    switch (type){
+        case 'i' :  cout << *((int*)ptr)  << endl; break;
+        case 'c' :  cout << *((char*)ptr)  << endl; break;
+        default: break;
+    }    
+}
+
+
 // simple function
 int main(){
     // using namespace variables
@@ -30,9 +47,13 @@ int main(){
     cout << namespace1::age  << endl;
     cout << namespace1::name  << endl;
 
+    cout << "================================================================"  << endl;
+
     // calling custome header file functions
     cout << "Today I will eat " << RecommendMeAFood('b')  << endl;
     GetPizzaRecipe();
+
+    cout << "================================================================"  << endl;
 
     // pointers
     // getting the addres
@@ -48,5 +69,13 @@ int main(){
     cout << *ptr  << endl;
     cout << n  << endl; // the value of var n change
 
+    cout << "================================================================"  << endl;
+
+    int number = 15;
+    char letter = 'g';
+    printNumber(&number);
+    printChar(&letter);
+    printAny(&number, 'i');
+    printAny(&letter, 'c');
     return 0;
 }
