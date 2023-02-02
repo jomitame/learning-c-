@@ -4,6 +4,7 @@
 
 // custom header file
 #include "food.h"
+#include "pointers.h"
 
 // namespace use
 // for easy use of importations and avoid names conflicts
@@ -23,59 +24,30 @@ namespace namespace2 {
     int age = 10;
 }
 
-void printNumber(int* numberPtr){
-    cout << *numberPtr  << endl;
-}
-
-void printChar(char* charPtr){
-    cout << *charPtr  << endl;
-}
-
-void printAny(void* ptr, char type){
-    switch (type){
-        case 'i' :  cout << *((int*)ptr)  << endl; break;
-        case 'c' :  cout << *((char*)ptr)  << endl; break;
-        default: break;
-    }    
-}
-
 
 // simple function
 int main(){
+    cout << "==============Custome Namespaces================================"  << endl;
+
     // using namespace variables
     // printing out with end line
     cout << namespace1::age  << endl;
     cout << namespace1::name  << endl;
 
-    cout << "================================================================"  << endl;
+    cout << "==============Custome Headers Files============================="  << endl;
 
     // calling custome header file functions
     cout << "Today I will eat " << RecommendMeAFood('b')  << endl;
     GetPizzaRecipe();
 
-    cout << "================================================================"  << endl;
+    cout << "================Pointers Part 1================================="  << endl;
 
-    // pointers
-    // getting the addres
-    int n = 5;
-    cout << &n  << endl;
-    // storing the addres
-    int* ptr = &n;
-    cout << ptr  << endl;
-    //geting the value
-    cout << *ptr  << endl;
-    // assining value to an address
-    *ptr = 14;
-    cout << *ptr  << endl;
-    cout << n  << endl; // the value of var n change
+    PointerOne();
 
-    cout << "================================================================"  << endl;
+    cout << "================Pointers Part 2================================="  << endl;
 
-    int number = 15;
-    char letter = 'g';
-    printNumber(&number);
-    printChar(&letter);
-    printAny(&number, 'i');
-    printAny(&letter, 'c');
+    PointerTwo();
+
+    cout << "================Exit Functuin==================================="  << endl;
     return 0;
 }
