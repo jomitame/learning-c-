@@ -16,7 +16,7 @@ using std::string;
 
 // defining namespaces
 namespace namespace1 {
-    int age = 5;
+    int age = 8;
     string name = "Jose";
 }
 namespace namespace2 {
@@ -33,6 +33,20 @@ int main(){
     // calling custome header file functions
     cout << "Today I will eat " << RecommendMeAFood('b')  << endl;
     GetPizzaRecipe();
+
+    // pointers
+    // getting the addres
+    int n = 5;
+    cout << &n  << endl;
+    // storing the addres
+    int* ptr = &n;
+    cout << ptr  << endl;
+    //geting the value
+    cout << *ptr  << endl;
+    // assining value to an address
+    *ptr = 14;
+    cout << *ptr  << endl;
+    cout << n  << endl; // the value of var n change
 
     return 0;
 }
