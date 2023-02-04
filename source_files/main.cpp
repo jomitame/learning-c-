@@ -5,6 +5,7 @@
 // custom header file
 #include "food.h"
 #include "pointers.h"
+#include "get_data.h"
 
 // namespace use
 // for easy use of importations and avoid names conflicts
@@ -62,6 +63,10 @@ int main(){
     cout << sizeof(ages) << endl;
     // this is the way to get the numbers of elemets
     cout << sizeof(ages) / sizeof(ages[0])  << endl;
+
+    cout << "================ cin ==================================="  << endl;
+
+    getData();
 
     cout << "================Exit Function==================================="  << endl;
     
