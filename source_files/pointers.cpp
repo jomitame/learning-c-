@@ -43,3 +43,14 @@ void PointerTwo(){
     printAny(&number, 'i');
     printAny(&letter, 'c');
 }
+
+void PointerThree(){
+    // the name of array is the address of the first element of the array
+    int luckyNumbers[5] = {1,2,3,4,5};
+    cout << luckyNumbers  << endl;
+    cout << &luckyNumbers[0]  << endl;
+    // getting the value of second array position
+    cout << luckyNumbers[1]  << endl;
+    // you can do the same in this way: the address plus 1 position
+    cout << *(luckyNumbers+1)  << endl;
+}
