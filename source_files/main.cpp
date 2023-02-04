@@ -48,6 +48,22 @@ int main(){
 
     PointerTwo();
 
-    cout << "================Exit Functuin==================================="  << endl;
+    cout << "================Pointers Part 3================================="  << endl;
+
+    PointerThree();
+
+    cout << "================size of==================================="  << endl;
+
+    int r = 9;
+    int ages[] = {3,4,5,6};
+    // size in bytes
+    cout << sizeof(r) << endl;
+    // this is the way to get the size of the list in bytes
+    cout << sizeof(ages) << endl;
+    // this is the way to get the numbers of elemets
+    cout << sizeof(ages) / sizeof(ages[0])  << endl;
+
+    cout << "================Exit Function==================================="  << endl;
+    
     return 0;
 }
