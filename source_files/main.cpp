@@ -84,6 +84,10 @@ int main(){
 
     getWhileLoop();
 
+    cout << "================ function ==================================="  << endl;
+
+    cout << getFunctionResult(5) << endl;
+
     cout << "================Exit Function==================================="  << endl;
     
     return 0;

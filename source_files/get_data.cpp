@@ -72,3 +72,9 @@ void getWhileLoop(){
 
     }
 }
+
+int getFunctionResult(int a, int b){
+    // this function is used in a header file
+    // default parameter is declared in the file .h
+    return a + b;
+}
