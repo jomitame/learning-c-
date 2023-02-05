@@ -60,3 +60,15 @@ void getForLoop(){
         cout << i << endl;
     }
 }
+
+void getWhileLoop(){
+    while (true){
+        char answer;
+        cout << "insert y to finish" << endl;
+        cin >> answer;
+        if ( answer == 'y'){
+            break;
+        }
+
+    }
+}

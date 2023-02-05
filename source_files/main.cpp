@@ -80,6 +80,10 @@ int main(){
 
     getForLoop();
 
+    cout << "================ for ==================================="  << endl;
+
+    getWhileLoop();
+
     cout << "================Exit Function==================================="  << endl;
     
     return 0;
