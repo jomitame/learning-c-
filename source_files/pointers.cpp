@@ -20,7 +20,7 @@ void printAny(void* ptr, char type){
     }    
 }
 
-void PointerOne(){
+void pointerOne(){
     // getting the addres
     int n = 5;
     cout << &n  << endl;
@@ -35,7 +35,7 @@ void PointerOne(){
     cout << n  << endl; // the value of var n change
 }
 
-void PointerTwo(){
+void pointerTwo(){
     int number = 15;
     char letter = 'g';
     printNumber(&number);
@@ -44,7 +44,7 @@ void PointerTwo(){
     printAny(&letter, 'c');
 }
 
-void PointerThree(){
+void pointerThree(){
     // the name of array is the address of the first element of the array
     int luckyNumbers[5] = {1,2,3,4,5};
     cout << luckyNumbers  << endl;

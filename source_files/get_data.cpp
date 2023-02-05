@@ -11,3 +11,18 @@ void getData(){
     cin >> age;
     cout << "Your are " << age  << " years old." << endl;
 }
+
+void getConditionalResult(){
+    bool firstCondition = true;
+    bool secondCondition = false;
+
+    if (firstCondition && secondCondition){
+        cout << "And condition" << endl;
+    }
+    if (firstCondition || secondCondition){
+        cout << "Or condition" << endl;
+    }
+    if (!secondCondition){
+        cout << "Not condition" << endl;
+    }
+}

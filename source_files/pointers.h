@@ -1,5 +1,5 @@
 #pragma once
 
-void PointerOne();
-void PointerTwo();
-void PointerThree();
+void pointerOne();
+void pointerTwo();
+void pointerThree();
