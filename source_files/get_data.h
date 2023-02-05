@@ -3,3 +3,4 @@
 void getData();
 void getIfConditionalResult();
 void getSwitchConditionalResult();
+void getForLoop();

@@ -76,6 +76,9 @@ int main(){
 
     getSwitchConditionalResult();
 
+    cout << "================ for ==================================="  << endl;
+
+    getForLoop();
 
     cout << "================Exit Function==================================="  << endl;
     

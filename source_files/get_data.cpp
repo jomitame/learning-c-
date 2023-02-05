@@ -33,7 +33,7 @@ void getSwitchConditionalResult(){
     cin >> option;
     switch (option)
     {
-        
+
     case 1:
         cout << "Value 1" << endl;
         break;
@@ -46,5 +46,17 @@ void getSwitchConditionalResult(){
     default:
         cout << "Not valid" << endl;
         break;
+    }
+}
+
+void getForLoop(){
+    for(int i = 0; i<10; i++){
+        if (i%2==0){
+            continue;    
+        }
+        if (i == 7){
+            break;
+        }
+        cout << i << endl;
     }
 }
