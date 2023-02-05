@@ -38,20 +38,20 @@ int main(){
     cout << "==============Custome Headers Files============================="  << endl;
 
     // calling custome header file functions
-    cout << "Today I will eat " << RecommendMeAFood('b')  << endl;
-    GetPizzaRecipe();
+    cout << "Today I will eat " << recommendMeAFood('b')  << endl;
+    getPizzaRecipe();
 
     cout << "================Pointers Part 1================================="  << endl;
 
-    PointerOne();
+    pointerOne();
 
     cout << "================Pointers Part 2================================="  << endl;
 
-    PointerTwo();
+    pointerTwo();
 
     cout << "================Pointers Part 3================================="  << endl;
 
-    PointerThree();
+    pointerThree();
 
     cout << "================size of==================================="  << endl;
 
@@ -67,6 +67,11 @@ int main(){
     cout << "================ cin ==================================="  << endl;
 
     getData();
+
+    cout << "================ cin ==================================="  << endl;
+
+    getConditionalResult();
+
 
     cout << "================Exit Function==================================="  << endl;
     

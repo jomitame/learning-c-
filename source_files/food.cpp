@@ -1,7 +1,7 @@
 #include <iostream>
 #include "food.h"
 
-const char* RecommendMeAFood(char firstLetter){
+const char* recommendMeAFood(char firstLetter){
     if (firstLetter == 'a' || firstLetter == 'A'){
         return "apple";
     }
@@ -14,6 +14,6 @@ const char* RecommendMeAFood(char firstLetter){
     else return "pizza";
 }
 
-void GetPizzaRecipe() {
+void getPizzaRecipe() {
     std::cout << "To make pizza you nedd ....\n";
 }

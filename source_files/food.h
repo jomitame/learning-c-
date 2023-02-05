@@ -4,7 +4,7 @@
 #ifndef FOOD_H
 #define FOOD_H
 // declaration
-const char* RecommendMeAFood(char firstLetter);
-void GetPizzaRecipe();
+const char* recommendMeAFood(char firstLetter);
+void getPizzaRecipe();
 
 #endif //FOOD_H
