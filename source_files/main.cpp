@@ -68,9 +68,13 @@ int main(){
 
     getData();
 
-    cout << "================ cin ==================================="  << endl;
+    cout << "================ if ==================================="  << endl;
 
-    getConditionalResult();
+    getIfConditionalResult();
+
+    cout << "================ switch ==================================="  << endl;
+
+    getSwitchConditionalResult();
 
 
     cout << "================Exit Function==================================="  << endl;

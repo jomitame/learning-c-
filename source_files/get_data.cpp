@@ -12,7 +12,7 @@ void getData(){
     cout << "Your are " << age  << " years old." << endl;
 }
 
-void getConditionalResult(){
+void getIfConditionalResult(){
     bool firstCondition = true;
     bool secondCondition = false;
 
@@ -24,5 +24,27 @@ void getConditionalResult(){
     }
     if (!secondCondition){
         cout << "Not condition" << endl;
+    }
+}
+
+void getSwitchConditionalResult(){
+    int option;
+    cout << "Inters an option from 1 to 3" << endl;
+    cin >> option;
+    switch (option)
+    {
+        
+    case 1:
+        cout << "Value 1" << endl;
+        break;
+    case 2:
+        cout << "Value 2" << endl;
+        break;
+    case 3:
+        cout << "Value 3" << endl;
+        break;
+    default:
+        cout << "Not valid" << endl;
+        break;
     }
 }

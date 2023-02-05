@@ -1,4 +1,5 @@
 #pragma once
 
 void getData();
-void getConditionalResult();
+void getIfConditionalResult();
+void getSwitchConditionalResult();
