@@ -2,7 +2,9 @@
 #include "pointers.h"
 
 using std::cout;
+using std::cin;
 using std::endl;
+
 
 void printNumber(int* numberPtr){
     cout << *numberPtr  << endl;
@@ -96,4 +98,32 @@ void pointerFour(){
     cout << "Min number is: "<< min << endl;
     cout << "Max number is: "<< max << endl;
 
+}
+
+void pointerFive(){
+    int size;
+    cout << "Input the size of the array: ";
+    cin >> size;
+
+    // working with dynamic memory
+    // new is a command that allocate memory for us
+    // other command is delete
+    int* myArray = new int[size];
+
+    for (int i=0; i < size; i++) {
+        cout << "Array["<<i<<"]: ";
+        cin >> myArray[i];
+    }
+
+    for (int i=0; i < size; i++) {
+        // remember the name the arry is the address of first element
+        // is the same of cout << myArray[i] <<"   ";
+        cout << *(myArray + i) <<"   ";
+    }
+
+    // to de-allocate memory
+    delete[]myArray;
+    myArray = NULL;
+
+    cout << endl;
 }

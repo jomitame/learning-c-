@@ -57,6 +57,10 @@ int main(){
 
     pointerFour();
 
+    cout << "================Pointers Part 5================================="  << endl;
+
+    pointerFive();
+
     cout << "================size of==================================="  << endl;
 
     int r = 9;
