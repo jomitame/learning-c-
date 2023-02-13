@@ -28,75 +28,79 @@ namespace namespace2 {
 
 // simple function
 int main(){
-    cout << "==============Custome Namespaces================================"  << endl;
+    // cout << "==============Custome Namespaces================================"  << endl;
 
     // using namespace variables
     // printing out with end line
-    cout << namespace1::age  << endl;
-    cout << namespace1::name  << endl;
+    // cout << namespace1::age  << endl;
+    // cout << namespace1::name  << endl;
 
-    cout << "==============Custome Headers Files============================="  << endl;
+    //cout << "==============Custome Headers Files============================="  << endl;
 
     // calling custome header file functions
-    cout << "Today I will eat " << recommendMeAFood('b')  << endl;
-    getPizzaRecipe();
+    // cout << "Today I will eat " << recommendMeAFood('b')  << endl;
+    // getPizzaRecipe();
 
-    cout << "================Pointers Part 1================================="  << endl;
+    // cout << "================Pointers Part 1================================="  << endl;
 
-    pointerOne();
+    // pointerOne();
 
-    cout << "================Pointers Part 2================================="  << endl;
+    // cout << "================Pointers Part 2================================="  << endl;
 
-    pointerTwo();
+    // pointerTwo();
 
-    cout << "================Pointers Part 3================================="  << endl;
+    // cout << "================Pointers Part 3================================="  << endl;
 
-    pointerThree();
+    // pointerThree();
 
-    cout << "================Pointers Part 4================================="  << endl;
+    // cout << "================Pointers Part 4================================="  << endl;
 
-    pointerFour();
+    // pointerFour();
 
-    cout << "================Pointers Part 5================================="  << endl;
+    // cout << "================Pointers Part 5================================="  << endl;
 
-    pointerFive();
+    // pointerFive();
 
-    cout << "================size of==================================="  << endl;
+    cout << "================Pointers Part 6================================="  << endl;
 
-    int r = 9;
-    int ages[] = {3,4,5,6};
+    pointerSix();
+
+    // cout << "================size of==================================="  << endl;
+
+    // int r = 9;
+    // int ages[] = {3,4,5,6};
     // size in bytes
-    cout << sizeof(r) << endl;
+    // cout << sizeof(r) << endl;
     // this is the way to get the size of the list in bytes
-    cout << sizeof(ages) << endl;
+    // cout << sizeof(ages) << endl;
     // this is the way to get the numbers of elemets
-    cout << sizeof(ages) / sizeof(ages[0])  << endl;
+    // cout << sizeof(ages) / sizeof(ages[0])  << endl;
 
-    cout << "================ cin ==================================="  << endl;
+    // cout << "================ cin ==================================="  << endl;
 
-    getData();
+    // getData();
 
-    cout << "================ if ==================================="  << endl;
+    // cout << "================ if ==================================="  << endl;
 
-    getIfConditionalResult();
+    // getIfConditionalResult();
 
-    cout << "================ switch ==================================="  << endl;
+    // cout << "================ switch ==================================="  << endl;
 
-    getSwitchConditionalResult();
+    // getSwitchConditionalResult();
 
-    cout << "================ for ==================================="  << endl;
+    // cout << "================ for ==================================="  << endl;
 
-    getForLoop();
+    // getForLoop();
 
-    cout << "================ for ==================================="  << endl;
+    // cout << "================ for ==================================="  << endl;
 
-    getWhileLoop();
+    // getWhileLoop();
 
-    cout << "================ function ==================================="  << endl;
+    // cout << "================ function ==================================="  << endl;
 
-    cout << getFunctionResult(5) << endl;
+    // cout << getFunctionResult(5) << endl;
 
-    cout << "================Exit Function==================================="  << endl;
+    // cout << "================Exit Function==================================="  << endl;
     
     return 0;
 }
